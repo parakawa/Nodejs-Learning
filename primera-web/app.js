@@ -1,8 +1,9 @@
 var express=require("express");
 var app=express();
+app.set("view engine","jade");
 
 app.get("/",function(req,res){
-	res.end("Holi :3");
+	res.render("index");
 });
 
 app.listen(8080);
